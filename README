@@ -17,7 +17,7 @@ First:
    - clone the repository
    - git clone https://github.com/KrzychuPOL/WDSO-KZ
    - run ./configure
-   - if there are any errors, run "make"
+   - if there aren't any errors, run "make"
    - use "sudo make install" in your console
 Second: 
    - go to the repository and download the file with the .zip extension
