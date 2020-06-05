@@ -1,0 +1,28 @@
+Installation Instructions
+
+You must have software such as:
+
+   - PERL
+   - M4 
+   - AUTOCONF 
+   - MAKE
+   - AUTOMAKE
+   - LIBTOOL
+
+Instructions for installing this software you can find on the internet
+ 
+There are two ways to install:
+
+First:
+   - clone the repository
+   - git clone https://github.com/KrzychuPOL/WDSO-KZ
+   - run ./configure
+   - if there are any errors, run "make"
+   - use "sudo make install" in your console
+Second: 
+   - go to the repository and download the file with the .zip extension
+   - unzip it and enter the unpacked folder
+   - Follow the steps from first way 
+
+In the repository you can find three versions of the file, each in a different issues
+INSTALL EACH ONE IN THE SAME WAY
