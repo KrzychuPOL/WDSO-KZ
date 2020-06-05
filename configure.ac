@@ -1,9 +1,9 @@
-AC_INIT([main], [1.0], [krzysztof.zarebski@pollub.edu.pl])
+#autoconf
 
-AM_INIT_AUTOMAKE
-
+AC_INIT([main], [1.0])
+LT_INIT
+AC_CONFIG_SRCDIR([main.c])
+AM_INIT_AUTOMAKE([foreign])
 AC_PROG_CC
-
 AC_CONFIG_FILES([Makefile])
-
 AC_OUTPUT
