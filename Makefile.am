@@ -1,9 +1,10 @@
 bin_PROGRAMS = main
-main_SOURCES = main.c objetosci.c pola.c objetosci.h pola.h
-
-clean-local:
-	@rm config.status configure config.log
-	@rm Makefile
-	@rm -r autom4te.cache/
-	@rm aclocal.m4
-	@rm compile install-sh missing Makefile.in
+main_SOURCES = main.c
+main_DEPENDENCIES = libobjetosci.la libpola.la
+lib_LTLIBRARIES = libpola.la
+noinst_LTLIBRARIES = libobjetosci.la
+libobjetosci_la_SOURCES = objetosci.c objetosci.h
+libpola_la_SOURCES = pola.c pola.h
+libpola_la_LDFLAGS = -version-info 1:1:1
+main_LDADD = libobjetosci.la libpola.la
+main_LDFLAGS = -rpath /usr/local/lib
